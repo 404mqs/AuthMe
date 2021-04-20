@@ -1,12 +1,11 @@
-﻿using Rocket.API;
+﻿using System.Collections.Generic;
+using System.Linq;
+using Rocket.API;
 using Rocket.Core.Logging;
-using Rocket.Unturned.Chat;
 using Rocket.Unturned.Player;
 using SDG.Unturned;
-using System.Collections.Generic;
-using System.Linq;
 
-namespace CodeRewards
+namespace AuthMe
 {
     public class WipeInfo : IRocketCommand
     {

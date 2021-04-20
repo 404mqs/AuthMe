@@ -1,10 +1,8 @@
-﻿using Rocket.Unturned.Player;
-using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-namespace CodeRewards
+namespace AuthMe
 {
     public class PasswordServices : MonoBehaviour
     {

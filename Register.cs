@@ -1,15 +1,9 @@
-﻿using Rocket.API;
-using Rocket.Core;
+﻿using System.Collections.Generic;
+using Rocket.API;
 using Rocket.Unturned.Chat;
 using Rocket.Unturned.Player;
-using SDG.Unturned;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Net;
 
-namespace CodeRewards
+namespace AuthMe
 {
 
     public class Register : IRocketCommand

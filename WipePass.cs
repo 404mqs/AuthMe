@@ -1,11 +1,9 @@
-﻿using Rocket.API;
-using Rocket.Core;
+﻿using System.Collections.Generic;
+using Rocket.API;
 using Rocket.Unturned.Chat;
 using Rocket.Unturned.Player;
-using System.Collections.Generic;
-using System.Linq;
 
-namespace CodeRewards
+namespace AuthMe
 {
     public class WipePass : IRocketCommand
     {

@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace CodeRewards
+﻿namespace AuthMe
 {
     public class Passwords
     {

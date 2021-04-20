@@ -1,6 +1,6 @@
 ﻿using Rocket.API;
 
-namespace CodeRewards
+namespace AuthMe
 { 
     public class Config : IRocketPluginConfiguration
     {

@@ -1,4 +1,6 @@
-﻿using AuthMe;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using Rocket.API.Collections;
 using Rocket.Core.Plugins;
 using Rocket.Unturned;
@@ -7,12 +9,9 @@ using Rocket.Unturned.Enumerations;
 using Rocket.Unturned.Events;
 using Rocket.Unturned.Player;
 using SDG.Unturned;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using Logger = Rocket.Core.Logging.Logger;
 
-namespace CodeRewards
+namespace AuthMe
 {
     public class MQSPlugin : RocketPlugin<Config>
     {
@@ -41,7 +40,7 @@ namespace CodeRewards
 
             DamageTool.damagePlayerRequested += OnPlayerDamage;
 
-            U.Events.OnPlayerConnected += OnPlayerConnected;
+            U.Events.OnPlayerConnected += player => OnPlayerConnected();
 
             UnturnedPlayerEvents.OnPlayerChatted += OnPlayerChatted;
             UnturnedPlayerEvents.OnPlayerInventoryAdded += OnInventoryAdd;
@@ -70,7 +69,6 @@ namespace CodeRewards
                         shouldAllow = false;
                     }
                 }
-
             }
         }
 
@@ -188,7 +186,7 @@ namespace CodeRewards
             PlayersLogged = null;
             DamageTool.damagePlayerRequested -= OnPlayerDamage;
 
-            U.Events.OnPlayerConnected -= OnPlayerConnected;
+            U.Events.OnPlayerConnected -= player => OnPlayerConnected();
 
             UnturnedPlayerEvents.OnPlayerChatted -= OnPlayerChatted;
             UnturnedPlayerEvents.OnPlayerInventoryAdded -= OnInventoryAdd;

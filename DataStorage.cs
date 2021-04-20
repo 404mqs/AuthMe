@@ -1,8 +1,7 @@
-﻿using Newtonsoft.Json;
-using System.IO;
+﻿using System.IO;
+using Newtonsoft.Json;
 
-
-namespace CodeRewards
+namespace AuthMe
 {
     public class DataStorage<T> where T : class
     {
