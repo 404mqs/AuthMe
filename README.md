@@ -12,7 +12,7 @@ https://www.spigotmc.org/resources/authmereloaded.6269/
 
 1- Install RocketMod on your servers.
 
-2- Compile the plugin in Visual Studio or download it from the Unturned Store.
+2- Compile the plugin in Visual Studio or download it from the Unturned Store. https://unturnedstore.com/products/82
 
 3- Put the dll in your Rocket/Plugins folder.
 
