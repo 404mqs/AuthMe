@@ -19,7 +19,7 @@ https://www.spigotmc.org/resources/authmereloaded.6269/
 4- Start your server. The plugin is now working.
 
 
-# Commands && Permissions
+# Commands & Permissions
 /register (Password) [authme.register]
 
 /login (Password) [authme.login]
